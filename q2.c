@@ -1,16 +1,20 @@
 #include<stdio.h>
 int main()
 {
-    int i , j;
-    for (j=1 ; j<=5 ; j++) {
+    int r,Ac,vc,h;
+    printf("enter the value of r\n:");
+    scanf("%d",&r);
 
-    for (i=1 ; i<=5; i++) {
-    
-        printf("%d\t", i * j);
-    }
-    printf("\n");
-        
-    }
+    printf("enetr the value of h\n:");
+    scanf("%d",&h);
+
+    Ac=r * r *22/7;
+    vc=r*r *h*22/7;
+
+    printf("area of circle\n = %d",Ac);
+    printf("volume of cylinder\n = %d",vc);
     return 0;
-}
 
+
+
+}

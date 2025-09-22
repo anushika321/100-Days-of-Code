@@ -1,17 +1,12 @@
 #include<stdio.h>
 int main()
 {
-    int j , i , n ;
-    for (i = 0 ; j = n ; i++){
+    int f, c ;
+    printf("enter the value of c\n:");
+    scanf("%d",&c);
 
-        for (j = 0 ; j = n ; j++){
+    f = (c * 9/5) + 32;
 
-            printf("* ");
-
-        }
-        printf("\n");
-
-    
-    }
+    printf("Celsius to Fahrenheit\n = %d\n ,f");
     return 0;
 }
