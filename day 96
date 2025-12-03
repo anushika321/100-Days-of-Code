@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+struct Date {
+    int day;
+    int month;
+    int year;
+};
+
+struct Employee {
+    int id;
+    char name[50];
+    float salary;
+    struct Date joinDate;   // Nested structure
+};
+
+int main() {
+    struct Employee e = {101, "Rahul Verma", 55000.75, {12, 6, 2023}};
+
+    printf("\n--- Employee Details ---\n");
+    printf("ID          : %d\n", e.id);
+    printf("Name        : %s\n", e.name);
+    printf("Salary      : %.2f\n", e.salary);
+    printf("Joining Date: %02d-%02d-%d\n",
+           e.joinDate.day, e.joinDate.month, e.joinDate.year);
+
+    return 0;
+}

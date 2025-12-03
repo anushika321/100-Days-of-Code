@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+struct Student {
+    int roll;
+    char name[50];
+    float marks;
+};
+
+// Function that accepts structure and prints members
+void printStudent(struct Student s) {
+    printf("\n--- Student Details ---\n");
+    printf("Roll Number : %d\n", s.roll);
+    printf("Name        : %s\n", s.name);
+    printf("Marks       : %.2f\n", s.marks);
+}
+
+int main() {
+    struct Student s1 = {1, "Nandini", 89.5};
+
+    printStudent(s1);  // Passing structure as parameter
+
+    return 0;
+}

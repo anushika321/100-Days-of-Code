@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+struct Student {
+    int roll;
+    char name[50];
+    float marks;
+};
+
+int main() {
+    struct Student s;          // normal structure variable
+    struct Student *ptr;       // pointer to structure
+
+    ptr = &s;                  // pointer storing address of structure
+
+    // Modify structure members using -> operator
+    ptr->roll = 101;
+    strcpy(ptr->name, "Nandini");
+    ptr->marks = 92.5;
+
+    // Display using -> operator
+    printf("----- Student Details -----\n");
+    printf("Roll Number : %d\n", ptr->roll);
+    printf("Name        : %s\n", ptr->name);
+    printf("Marks       : %.2f\n", ptr->marks);
+
+    return 0;
+}
